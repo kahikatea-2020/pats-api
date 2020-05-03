@@ -17,6 +17,7 @@ class Genrenator extends Component {
   }
 
   componentDidMount() {
+    this.setState({gif: false})
     request.get(genreUrl)
       .then(res => {
         this.setState({
@@ -26,7 +27,7 @@ class Genrenator extends Component {
     request.get(giphyUrl)
       .query({
         api_key: giphyKey,
-        q: this.state.genre.split(' ').join('_')
+        q: this.state.genre.split(' ').join('%20')
       })
       .then(res => {
         this.setState({

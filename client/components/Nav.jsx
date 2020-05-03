@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const Nav = () => {
   return ( 
-    <Navbar className="justify-content-center" bg="light">
+    <Navbar className="justify-content-center" bg="light" >
       <Navbar.Text className="text-dark">Genrenator x Giphy</Navbar.Text>
     </Navbar>
   )
